@@ -12,6 +12,7 @@ public interface Cat {
 			case SOLUTION:
 				return new CatSolution(id, name);
 			case MOCK:
+					return new 
 			    // TODO: Return a mock object that emulates the behavior of a real object.
 				return null;
 			default:
