@@ -12,7 +12,6 @@ public interface RentACat {
 			case SOLUTION:
 				return new RentACatSolution();
 			case MOCK:
-				// TODO: Return a mock object that emulates the behavior of a real object.
 				RentACat rentACat = Mockito.mock(RentACat.class);
 				Mockito.when(rentACat.listCats()).thenReturn("ID 1. Testcat /nID 2. Testcat2");
 				Mockito.when(rentACat.returnCat(1)).thenReturn(true);
