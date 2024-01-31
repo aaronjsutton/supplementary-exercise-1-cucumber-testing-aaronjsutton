@@ -80,10 +80,10 @@ public class RentACatImpl implements RentACat {
 	 */
 
 	public String listCats() {
-		String result = "\n ";
+		String result = "";
 		for (Cat cat : cats){
-			if (cat.getRented()){
-				result += (cat.toString() + ", ");
+			if (!cat.getRented()){
+				result += (cat.toString() + "\n");
 			}
 		}
 		return result;
